@@ -7,19 +7,19 @@ export function Newsletter() {
   const [state, action, pending] = useActionState(subscribe, null);
   return (
     <form action={action} className="mt-7">
-      <div className="flex gap-4 sm:gap-7">
+      <div className="flex justify-center gap-5 lg:justify-start lg:gap-7">
         <input
           type="email"
           name="email"
           required
           placeholder="Email"
           aria-label="Email"
-          className="h-[42px] w-full min-w-0 rounded-full bg-white px-7 text-[15px] text-ink outline-none focus:ring-1 focus:ring-ink sm:max-w-[200px] lg:max-w-[205px]"
+          className="h-[44px] w-[190px] min-w-0 rounded-full bg-white px-7 text-[15px] text-ink outline-none focus:ring-1 focus:ring-ink lg:h-[42px] lg:w-[205px]"
         />
         <button
           type="submit"
           disabled={pending}
-          className="h-[42px] shrink-0 rounded-full border border-line bg-white px-7 text-[15px] text-ink transition-colors hover:border-ink disabled:opacity-60"
+          className="h-[44px] shrink-0 rounded-full border border-line bg-white px-7 lg:h-[42px] text-[15px] text-ink transition-colors hover:border-ink disabled:opacity-60"
         >
           Register
         </button>

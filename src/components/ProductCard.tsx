@@ -9,12 +9,12 @@ export function Badges({ product }: { product: Product }) {
   return (
     <div className="flex flex-wrap gap-2">
       {pct && (
-        <span className="rounded-[3px] bg-sale-badge px-2.5 py-1 text-[12px] leading-none text-white">
+        <span className="rounded-[5px] bg-sale-badge px-[7px] text-[11px] leading-[22px] text-white lg:text-[12px]">
           {pct}% off
         </span>
       )}
       {product.badge && (
-        <span className="rounded-[3px] bg-badge px-2.5 py-1 text-[12px] leading-none text-white">
+        <span className="rounded-[5px] bg-badge px-[7px] text-[11px] leading-[22px] text-white lg:text-[12px]">
           {product.badge}
         </span>
       )}
@@ -24,12 +24,12 @@ export function Badges({ product }: { product: Product }) {
 
 export function Price({ product, large = false }: { product: Product; large?: boolean }) {
   // Lacoste shows the product-page price in capitals ("RP1.979.400").
-  const size = large ? "text-[18px] uppercase" : "text-[15px]";
+  const size = large ? "text-[15px] uppercase lg:text-[18px]" : "text-[13px] lg:text-[15px]";
   if (product.salePrice !== null && product.salePrice < product.price) {
     return (
       <p className={`flex flex-wrap items-baseline gap-x-3 ${size}`}>
         <span className="font-semibold text-sale">{formatPrice(product.salePrice)}</span>
-        <span className="text-[13px] text-muted line-through">{formatPrice(product.price)}</span>
+        <span className="text-[12px] text-muted line-through lg:text-[13px]">{formatPrice(product.price)}</span>
       </p>
     );
   }
@@ -50,18 +50,18 @@ export function ProductCard({ product, preload = false }: { product: Product; pr
           </div>
         )}
         {extraColours > 0 && (
-          <span className="absolute bottom-3 left-1.5 bg-white px-3 py-1.5 text-[13px] text-ink sm:left-2">
+          <span className="absolute bottom-[5px] left-[5px] bg-white px-2 py-1 text-[13px] leading-[23px] text-ink lg:bottom-3 lg:left-2 lg:px-3 lg:py-1.5 lg:leading-normal">
             + {extraColours} {extraColours === 1 ? "colour" : "colours"}
           </span>
         )}
       </div>
-      <div className="mt-3.5">
+      <div className="mt-2.5 lg:mt-3.5">
         <Badges product={product} />
       </div>
-      <p className="mt-3 text-[14px] leading-snug text-ink underline-offset-4 group-hover:underline sm:text-[15px]">
+      <p className="mt-2 text-[13px] leading-[23px] text-ink underline-offset-4 group-hover:underline lg:mt-3 lg:text-[15px] lg:leading-snug">
         {product.name}
       </p>
-      <div className="mt-3">
+      <div className="mt-2 lg:mt-3">
         <Price product={product} />
       </div>
     </Link>

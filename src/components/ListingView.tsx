@@ -33,21 +33,21 @@ export function ListingView(props: Props) {
     <>
       <Breadcrumb items={props.breadcrumbs} />
 
-      <section className="grid lg:grid-cols-2">
-        <div className="relative aspect-[4/3] bg-tile lg:aspect-auto lg:min-h-[760px]">
+      <section className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="relative aspect-square bg-tile lg:aspect-auto lg:min-h-[760px]">
           <ProductImage src={props.heroImage} alt={props.title} sizes="(min-width: 1024px) 50vw, 100vw" preload />
         </div>
 
-        <div className="px-4 pt-8 sm:px-6 lg:pl-14 lg:pr-[52px] lg:pt-1">
+        <div className="px-4 pt-5 sm:px-6 lg:pl-14 lg:pr-[52px] lg:pt-1">
           <h1 className="text-[22px] font-semibold text-ink lg:text-[26px]">{props.title}</h1>
           {props.description && (
-            <p className="mt-6 max-w-[540px] text-[15px] leading-[1.75] text-ink lg:text-base">{props.description}</p>
+            <p className="mt-4 max-w-[540px] text-[15px] leading-[25px] text-ink lg:mt-6 lg:text-base lg:leading-[1.75]">{props.description}</p>
           )}
 
           {props.links && props.links.items.length > 0 && (
-            <div className="mt-9 flex gap-16 text-[15px] lg:text-base">
-              <p className="w-20 shrink-0 font-semibold">{props.links.label}</p>
-              <ul className="space-y-2.5">
+            <div className="mt-[72px] flex gap-8 text-[15px] lg:mt-9 lg:gap-16 lg:text-base">
+              <p className="shrink-0 font-semibold lg:w-20">{props.links.label}</p>
+              <ul className="flex flex-wrap gap-x-8 gap-y-2 lg:block lg:space-y-2.5">
                 {props.links.items.map((item) => (
                   <li key={item.href}>
                     <Link
@@ -64,7 +64,8 @@ export function ListingView(props: Props) {
 
           {props.extra}
 
-          <div className="mt-12 flex flex-wrap items-center justify-between gap-4 lg:mt-[160px]">
+          {/* Mobile: centred filter button above the count, as on lacoste.com. */}
+          <div className="mt-10 flex flex-col-reverse gap-6 lg:mt-[160px] lg:flex-row lg:items-center lg:justify-between lg:gap-4">
             <p className="text-[15px] lg:text-base">
               See {products.length} {products.length === 1 ? "product" : "products"}
             </p>
@@ -80,7 +81,7 @@ export function ListingView(props: Props) {
           {products.length === 0 ? (
             <p className="mt-10 text-muted">No products match your selection.</p>
           ) : (
-            <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-12 sm:gap-x-6 lg:gap-x-14">
+            <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 lg:gap-x-14 lg:gap-y-12">
               {beside.map((p, i) => (
                 <ProductCard key={p.id} product={p} preload={i < 2} />
               ))}
@@ -90,7 +91,7 @@ export function ListingView(props: Props) {
       </section>
 
       {below.length > 0 && (
-        <section className="mt-12 grid grid-cols-2 gap-x-4 gap-y-12 px-4 sm:gap-x-6 sm:px-6 lg:mt-16 lg:grid-cols-4 lg:gap-x-14 lg:gap-y-16 lg:px-[55px]">
+        <section className="mt-10 grid grid-cols-2 gap-x-4 gap-y-10 px-4 sm:gap-x-6 sm:px-6 lg:mt-16 lg:grid-cols-4 lg:gap-x-14 lg:gap-y-16 lg:px-[55px]">
           {below.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}

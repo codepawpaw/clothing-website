@@ -68,17 +68,16 @@ export function Header({ tree }: { tree: CategoryNode[] }) {
 
   return (
     <header className="sticky top-0 z-40 bg-white" onClickCapture={closeOnLinkClick}>
-      <div className="mx-auto flex h-[72px] max-w-[1920px] items-center px-4 sm:px-6 lg:h-[84px] lg:px-14">
-        <button
-          type="button"
-          className="-ml-2 mr-2 p-2 lg:hidden"
-          aria-label="Open menu"
-          onClick={() => setMobileOpen(true)}
-        >
-          <Menu className="size-6" strokeWidth={1.25} />
+      {/* Mobile follows lacoste.com: search left, logo centred, bag and menu right. */}
+      <div className="relative mx-auto flex h-[60px] max-w-[1920px] items-center px-2 sm:px-4 lg:h-[84px] lg:px-14">
+        <button type="button" className="p-2 lg:hidden" aria-label="Search" onClick={() => setSearchOpen(true)}>
+          <Search className="size-6" strokeWidth={1.25} />
         </button>
 
-        <Link href="/" className="text-[22px] font-bold tracking-[0.06em] text-black lg:text-[26px]">
+        <Link
+          href="/"
+          className="absolute left-1/2 -translate-x-1/2 text-[22px] font-bold tracking-[0.06em] text-black lg:static lg:translate-x-0 lg:text-[26px]"
+        >
           {site.brandName}
         </Link>
 
@@ -103,11 +102,11 @@ export function Header({ tree }: { tree: CategoryNode[] }) {
           ))}
         </nav>
 
-        <div className="ml-auto flex items-center gap-1 sm:gap-3 lg:ml-0">
-          <button type="button" className="p-2" aria-label="Search" onClick={() => setSearchOpen(true)}>
+        <div className="ml-auto flex items-center gap-1 lg:ml-0 lg:gap-3">
+          <button type="button" className="hidden p-2 lg:block" aria-label="Search" onClick={() => setSearchOpen(true)}>
             <Search className="size-6" strokeWidth={1.25} />
           </button>
-          <Link href="/admin" className="hidden p-2 sm:block" aria-label="Account">
+          <Link href="/admin" className="hidden p-2 lg:block" aria-label="Account">
             <User className="size-6" strokeWidth={1.25} />
           </Link>
           <button type="button" className="relative p-2" aria-label={`Shopping bag, ${count} items`} onClick={openDrawer}>
@@ -115,6 +114,9 @@ export function Header({ tree }: { tree: CategoryNode[] }) {
             <span className="absolute right-0.5 top-0.5 flex size-[17px] items-center justify-center rounded-full bg-ink text-[10px] font-medium text-white">
               {count > 99 ? "99" : count}
             </span>
+          </button>
+          <button type="button" className="p-2 lg:hidden" aria-label="Open menu" onClick={() => setMobileOpen(true)}>
+            <Menu className="size-6" strokeWidth={1.25} />
           </button>
         </div>
       </div>
@@ -183,25 +185,25 @@ function MobileNav({ nav, onClose }: { nav: NavItem[]; onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-50 lg:hidden">
       <div className="absolute inset-0 bg-black/40" onClick={onClose} />
-      <div className="absolute inset-y-0 left-0 flex w-[85%] max-w-sm flex-col overflow-y-auto bg-white">
-        <div className="flex h-[72px] items-center justify-between border-b border-line px-4">
+      <div className="absolute inset-y-0 right-0 flex w-full max-w-[420px] flex-col overflow-y-auto bg-white">
+        <div className="flex h-[60px] items-center justify-between border-b border-line pl-4 pr-2">
           <span className="text-[22px] font-bold tracking-[0.06em] text-black">{site.brandName}</span>
           <button type="button" onClick={onClose} aria-label="Close menu" className="p-2">
             <X className="size-6" strokeWidth={1.25} />
           </button>
         </div>
-        <ul className="px-4 py-2">
+        <ul className="px-4 py-3">
           {nav.map((item) => (
             <li key={item.label} className="border-b border-line">
               {item.children.length === 0 ? (
-                <Link href={item.href} className="block py-4 text-base">
+                <Link href={item.href} className="block py-4 text-[20px] font-bold">
                   {item.label}
                 </Link>
               ) : (
                 <>
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between py-4 text-base"
+                    className="flex w-full items-center justify-between py-4 text-[20px] font-bold"
                     aria-expanded={expanded === item.label}
                     onClick={() => setExpanded(expanded === item.label ? null : item.label)}
                   >
@@ -212,7 +214,7 @@ function MobileNav({ nav, onClose }: { nav: NavItem[]; onClose: () => void }) {
                     />
                   </button>
                   {expanded === item.label && (
-                    <ul className="space-y-3 pb-4 pl-4">
+                    <ul className="space-y-4 pb-5 text-[17px]">
                       <li>
                         <Link href={item.href} className="font-semibold">
                           See all
@@ -230,7 +232,7 @@ function MobileNav({ nav, onClose }: { nav: NavItem[]; onClose: () => void }) {
             </li>
           ))}
           <li>
-            <Link href="/admin" className="block py-4 text-base">
+            <Link href="/admin" className="block py-4 text-[15px] text-muted">
               Account
             </Link>
           </li>

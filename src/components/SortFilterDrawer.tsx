@@ -58,7 +58,7 @@ export function SortFilterDrawer({ basePath, baseQuery = {}, current, options, s
       <button
         type="button"
         onClick={openDrawer}
-        className="flex h-[42px] items-center gap-4 rounded-full bg-ink px-8 text-[15px] text-white hover:bg-black lg:h-[44px] lg:px-10"
+        className="flex h-[44px] items-center gap-4 self-center rounded-full border border-line bg-white px-[30px] text-[15px] text-ink hover:border-ink lg:self-auto lg:border-0 lg:bg-ink lg:px-10 lg:text-white lg:hover:bg-black"
       >
         <SlidersHorizontal className="size-5" strokeWidth={1.25} />
         Sort and filter{activeCount > 0 && ` (${activeCount})`}

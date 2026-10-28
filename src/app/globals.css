@@ -14,15 +14,27 @@
   --color-sale: #1a4429;
   --color-placeholder: #6e757c;
   --color-icon: #666666;
+  --color-cta: #105a33;
+  --color-cta-dark: #0c4527;
 }
 
 @theme inline {
-  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-metropolis), Arial, Helvetica, sans-serif;
 }
 
 body {
   background: #ffffff;
   color: var(--color-ink);
+}
+
+/* iOS Safari zooms into any field with text under 16px; keep fields at 16px on small screens.
+   Unlayered, so it wins over Tailwind utilities. */
+@media (max-width: 1023px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="file"]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
 }
 
 input::placeholder,

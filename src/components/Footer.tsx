@@ -14,7 +14,7 @@ const REASSURANCE = [
 ];
 
 function Heading({ children }: { children: React.ReactNode }) {
-  return <p className="mb-7 text-[11px] font-semibold uppercase tracking-[0.18em] text-subtle">{children}</p>;
+  return <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-subtle lg:mb-7">{children}</p>;
 }
 
 export function Footer({ tree }: { tree: CategoryNode[] }) {
@@ -22,7 +22,7 @@ export function Footer({ tree }: { tree: CategoryNode[] }) {
 
   return (
     <footer className="mt-24">
-      <div className="mx-auto grid max-w-[1920px] grid-cols-2 gap-y-10 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-14">
+      <div className="mx-auto grid max-w-[1920px] grid-cols-2 gap-y-10 border-t border-line px-4 py-10 sm:px-6 lg:grid-cols-4 lg:border-0 lg:px-14 lg:py-12">
         {REASSURANCE.map(({ icon: Icon, label }) => (
           <div key={label} className="flex flex-col items-center gap-4 text-center">
             <Icon className="size-8 text-ink" strokeWidth={1} />
@@ -32,31 +32,32 @@ export function Footer({ tree }: { tree: CategoryNode[] }) {
       </div>
 
       <div className="bg-footer">
-        <div className="mx-auto grid max-w-[1920px] gap-14 px-4 pb-16 pt-16 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] lg:px-14 lg:pt-[110px]">
-          <div>
-            <p className="text-[22px] leading-snug text-black lg:text-[26px]">
+        {/* Mobile: newsletter centred on top, then About + Help on the left and Categories on the right. */}
+        <div className="mx-auto grid max-w-[1920px] grid-cols-2 gap-x-6 gap-y-12 px-4 pb-14 pt-12 sm:px-6 lg:grid-cols-[1.6fr_1fr_1fr_1fr] lg:gap-14 lg:px-14 lg:pb-16 lg:pt-[110px]">
+          <div className="col-span-2 text-center lg:col-span-1 lg:text-left">
+            <p className="text-[20px] leading-snug text-black lg:text-[26px]">
               <span className="font-semibold">Sign up for new stories,</span>
               <br />
               news and personal offers
             </p>
             <Newsletter />
-            <div className="mt-14">
+            <div className="mt-10 flex justify-center lg:mt-14 lg:block">
               <SocialIcons />
             </div>
           </div>
 
-          <div>
+          <div className="col-start-1 row-start-2 lg:col-auto lg:row-auto">
             <Heading>About {site.brandName}</Heading>
-            <ul className="space-y-[18px] text-[15px] text-ink">
+            <ul className="space-y-[18px] text-[13px] text-ink lg:text-[15px]">
               <li><Link href="/new-in" className="hover:underline">New collection</Link></li>
               <li><Link href="/sale" className="hover:underline">Sale</Link></li>
               <li><Link href="/search" className="hover:underline">Search</Link></li>
             </ul>
           </div>
 
-          <div>
+          <div className="col-start-2 row-start-2 row-end-4 lg:col-auto lg:row-auto">
             <Heading>Categories</Heading>
-            <ul className="space-y-[18px] text-[15px] text-ink">
+            <ul className="space-y-[18px] text-[13px] text-ink lg:text-[15px]">
               {categoryLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="hover:underline">{link.label}</Link>
@@ -65,9 +66,9 @@ export function Footer({ tree }: { tree: CategoryNode[] }) {
             </ul>
           </div>
 
-          <div>
+          <div className="col-start-1 row-start-3 lg:col-auto lg:row-auto">
             <Heading>Help &amp; Contacts</Heading>
-            <ul className="space-y-[18px] text-[15px] text-ink">
+            <ul className="space-y-[18px] text-[13px] text-ink lg:text-[15px]">
               <li>
                 <a href={`mailto:${site.email}`} className="hover:underline">By email</a>
               </li>
@@ -85,7 +86,7 @@ export function Footer({ tree }: { tree: CategoryNode[] }) {
         </div>
 
         <div className="border-t border-line">
-          <p className="mx-auto max-w-[1920px] px-4 py-8 text-[13px] text-muted sm:px-6 lg:px-14">
+          <p className="mx-auto max-w-[1920px] px-4 py-8 text-center text-[13px] text-muted sm:px-6 lg:px-14 lg:text-left">
             © {site.brandName}. All rights reserved.
           </p>
         </div>

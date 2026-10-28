@@ -51,9 +51,9 @@ async function ProductDetails({ params }: PageProps<"/p/[slug]">) {
         ]}
       />
 
-      <section className="grid lg:grid-cols-2">
+      <section className="grid grid-cols-1 lg:grid-cols-2">
         <ProductGallery images={product.images} name={product.name} />
-        <div className="px-4 pt-8 sm:px-6 lg:px-[8%] lg:pt-[56px] xl:px-[160px]">
+        <div className="px-[30px] pt-6 lg:px-[8%] lg:pt-[56px] xl:px-[160px]">
           <div className="lg:sticky lg:top-[120px]">
             <ProductPurchase product={product} />
           </div>

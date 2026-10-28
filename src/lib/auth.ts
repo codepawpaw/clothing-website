@@ -1,6 +1,6 @@
 import "server-only";
 import { timingSafeEqual } from "node:crypto";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import {
   SESSION_COOKIE,
@@ -25,11 +25,19 @@ export function checkCredentials(username: string, password: string): boolean {
   return userOk && passOk;
 }
 
+/** True when the browser reached the site over HTTPS (Origin is sent with every server action). */
+async function isHttps(): Promise<boolean> {
+  const h = await headers();
+  return (h.get("origin") ?? "").startsWith("https://") || h.get("x-forwarded-proto") === "https";
+}
+
 export async function startSession() {
   (await cookies()).set(SESSION_COOKIE, await createSessionToken(), {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    // Safari drops Secure cookies on plain http (even localhost), so only mark it
+    // Secure when the site is actually served over HTTPS.
+    secure: await isHttps(),
     path: "/",
     maxAge: SESSION_MAX_AGE,
   });

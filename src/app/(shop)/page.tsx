@@ -11,24 +11,32 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="relative h-[70vh] min-h-[460px] lg:h-[calc(100vh-84px)] lg:max-h-[900px]">
+      {site.announcement && (
+        <p className="bg-[#101820] px-6 py-[9px] text-center text-[15px] leading-[25px] text-white">{site.announcement}</p>
+      )}
+      <section className="relative h-[calc(100svh-60px)] min-h-[520px] lg:h-[calc(100vh-84px)] lg:max-h-[900px]">
         <ProductImage src="/images/home.jpg" alt="" sizes="100vw" preload />
-        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/35 to-transparent px-4 pb-12 pt-32 text-white sm:px-6 lg:px-14 lg:pb-16">
-          <h1 className="text-[30px] font-semibold leading-tight lg:text-[44px]">{site.brandName} New Collection</h1>
-          <p className="mt-3 max-w-xl text-[15px] lg:text-base">{site.tagline}</p>
-          <div className="mt-7 flex flex-wrap gap-3">
+        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/35 to-transparent px-[31px] pb-[68px] pt-32 text-white lg:px-14 lg:pb-16">
+          <h1 className="max-w-[640px] text-[36px] font-extrabold uppercase leading-[36px] lg:text-[56px] lg:leading-[56px]">
+            {site.heroTitle}
+          </h1>
+          <p className="mt-4 hidden max-w-xl text-base lg:block">{site.tagline}</p>
+          <div className="mt-5 flex flex-wrap gap-3 lg:mt-7">
+            <Link
+              href="/new-in"
+              className="flex h-[44px] items-center rounded-full bg-white px-[31px] text-[15px] text-ink hover:bg-footer"
+            >
+              Discover New Arrival
+            </Link>
             {tree.slice(0, 2).map((c) => (
               <Link
                 key={c.id}
                 href={`/c/${c.slug}`}
-                className="rounded-full bg-white px-8 py-3.5 text-[15px] text-ink hover:bg-footer"
+                className="hidden h-[44px] items-center rounded-full border border-white px-[31px] text-[15px] hover:bg-white/10 lg:flex"
               >
                 Shop {c.name}
               </Link>
             ))}
-            <Link href="/new-in" className="rounded-full border border-white px-8 py-3.5 text-[15px] hover:bg-white/10">
-              New In
-            </Link>
           </div>
         </div>
       </section>
