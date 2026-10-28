@@ -23,7 +23,7 @@ async function NewInListing({ searchParams }: PageProps<"/new-in">) {
       breadcrumbs={[{ label: "New In" }]}
       title={`${site.brandName} New Collection`}
       description={site.tagline}
-      heroImage="/placeholder/hero-new-in.svg"
+      heroImage="/images/new-in.jpg"
       links={{
         label: "New In",
         items: buildCategoryTree(categories).map((c) => ({ label: c.name, href: `/c/${c.slug}` })),

@@ -26,7 +26,7 @@ async function SearchListing({ searchParams }: PageProps<"/search">) {
       breadcrumbs={[{ label: "Search" }]}
       title={q ? `Results for “${q}”` : "Search"}
       description={q ? undefined : "Type a product name, category or colour."}
-      heroImage="/placeholder/hero-new-in.svg"
+      heroImage="/images/new-in.jpg"
       extra={
         <Form action="/search" className="mt-8 flex max-w-[540px] gap-3">
           <input

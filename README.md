@@ -39,6 +39,7 @@ Edit `src/config/site.ts`: nama brand, tagline, **nomor WhatsApp** (format `628x
 | `data/*.json` | Data aktif. Dibuat otomatis dari `seed/` saat pertama dijalankan. Backup folder ini. |
 | `storage/uploads/` | Foto yang di-upload admin, disajikan lewat `/media/...`. Backup folder ini juga. |
 | `public/placeholder/` | Gambar placeholder data contoh |
+| `public/images/` | Foto banner (Unsplash, bebas dipakai komersial). Sumber di `public/images/CREDITS.md` |
 
 - `npm run reset-data`: hapus `data/` sehingga toko kembali ke data contoh.
 - `npm run generate-seed`: buat ulang `seed/` dan gambar placeholder.

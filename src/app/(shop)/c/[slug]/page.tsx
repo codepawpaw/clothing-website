@@ -42,7 +42,7 @@ async function CategoryListing({ params, searchParams }: PageProps<"/c/[slug]">)
       ]}
       title={parent ? `${parent.name} ${category.name}` : category.name}
       description={category.description}
-      heroImage={category.image ?? parent?.image ?? "/placeholder/hero-new-in.svg"}
+      heroImage={category.image ?? parent?.image ?? "/images/new-in.jpg"}
       links={{
         label: group.name,
         items: children.map((c) => ({ label: c.name, href: `/c/${c.slug}`, active: c.id === category.id })),

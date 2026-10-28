@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
     proxyClientMaxBodySize: "50mb",
   },
   images: {
-    localPatterns: [{ pathname: "/media/**" }, { pathname: "/placeholder/**" }],
+    localPatterns: [{ pathname: "/media/**" }, { pathname: "/placeholder/**" }, { pathname: "/images/**" }],
   },
 };
 

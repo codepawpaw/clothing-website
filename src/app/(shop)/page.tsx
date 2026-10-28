@@ -12,7 +12,7 @@ export default async function HomePage() {
   return (
     <>
       <section className="relative h-[70vh] min-h-[460px] lg:h-[calc(100vh-84px)] lg:max-h-[900px]">
-        <ProductImage src="/placeholder/hero-home.svg" alt="" sizes="100vw" preload />
+        <ProductImage src="/images/home.jpg" alt="" sizes="100vw" preload />
         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/35 to-transparent px-4 pb-12 pt-32 text-white sm:px-6 lg:px-14 lg:pb-16">
           <h1 className="text-[30px] font-semibold leading-tight lg:text-[44px]">{site.brandName} New Collection</h1>
           <p className="mt-3 max-w-xl text-[15px] lg:text-base">{site.tagline}</p>
@@ -41,7 +41,7 @@ export default async function HomePage() {
               <Link key={c.id} href={`/c/${c.slug}`} className="group block">
                 <div className="relative aspect-[4/5] overflow-hidden bg-tile">
                   <ProductImage
-                    src={c.image ?? "/placeholder/hero-new-in.svg"}
+                    src={c.image ?? "/images/new-in.jpg"}
                     alt={c.name}
                     sizes="(min-width: 1024px) 25vw, 50vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -82,7 +82,7 @@ export default async function HomePage() {
           </Link>
         </div>
         <div className="relative aspect-[4/5] bg-tile lg:aspect-auto lg:h-[720px]">
-          <ProductImage src="/placeholder/hero-story.svg" alt="" sizes="(min-width: 1024px) 50vw, 100vw" />
+          <ProductImage src="/images/story.jpg" alt="" sizes="(min-width: 1024px) 50vw, 100vw" />
         </div>
       </section>
     </>

@@ -5,7 +5,7 @@
     "slug": "men",
     "parentId": null,
     "description": "Polos, shirts and outerwear cut for everyday elegance.",
-    "image": "/placeholder/hero-men.svg",
+    "image": "/images/men.jpg",
     "order": 1,
     "createdAt": "2026-09-27T00:00:00.000Z"
   },
@@ -15,7 +15,7 @@
     "slug": "women",
     "parentId": null,
     "description": "Dresses, polos and leather goods with a sporting spirit.",
-    "image": "/placeholder/hero-women.svg",
+    "image": "/images/women.jpg",
     "order": 2,
     "createdAt": "2026-09-27T00:00:00.000Z"
   },
@@ -25,7 +25,7 @@
     "slug": "kids",
     "parentId": null,
     "description": "Comfortable essentials for the next generation.",
-    "image": "/placeholder/hero-kids.svg",
+    "image": "/images/kids.jpg",
     "order": 3,
     "createdAt": "2026-09-27T00:00:00.000Z"
   },
@@ -35,7 +35,7 @@
     "slug": "sneakers",
     "parentId": null,
     "description": "Court-inspired sneakers for every day.",
-    "image": "/placeholder/hero-sneakers.svg",
+    "image": "/images/sneakers.jpg",
     "order": 4,
     "createdAt": "2026-09-27T00:00:00.000Z"
   },

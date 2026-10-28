@@ -22,7 +22,7 @@ async function SaleListing({ searchParams }: PageProps<"/sale">) {
       breadcrumbs={[{ label: "Sale" }]}
       title="Sale"
       description="Selected pieces at reduced prices, while stocks last."
-      heroImage="/placeholder/hero-sale.svg"
+      heroImage="/images/sale.jpg"
       allProducts={onSale}
       products={applyFilters(onSale, filters)}
       filters={filters}

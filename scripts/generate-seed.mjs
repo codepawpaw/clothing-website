@@ -1,4 +1,5 @@
 // Generates the demo catalogue (seed/*.json) and placeholder product images (public/placeholder/*.svg).
+// Banner photos live in public/images (see public/images/CREDITS.md).
 // Run with: npm run generate-seed
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -57,15 +58,6 @@ function productSvg(shape, hex) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><rect width="800" height="800" fill="${TILE}"/>${SHAPES[shape](hex)}<ellipse cx="400" cy="700" rx="230" ry="18" fill="rgba(0,0,0,.05)"/></svg>`;
 }
 
-function heroSvg(from, to, letter, w = 1200, h = 1500) {
-  const size = Math.min(w, h) * 0.75;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${from}"/><stop offset="1" stop-color="${to}"/></linearGradient>
-  <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="30" stdDeviation="30" flood-opacity=".18"/></filter></defs>
-  <rect width="${w}" height="${h}" fill="url(#g)"/>
-  <text x="${w / 2}" y="${h * 0.62}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="${size}" font-weight="700" fill="#ffffff" filter="url(#s)">${letter}</text>
-</svg>`;
-}
 
 const hexName = (hex) => hex.replace("#", "").toLowerCase();
 const image = (shape, hex) => {
@@ -74,20 +66,6 @@ const image = (shape, hex) => {
   return `/placeholder/${file}`;
 };
 
-// Hero images
-const HEROES = {
-  home: ["#7797b1", "#cad7e3", "M", 2400, 1200],
-  men: ["#7797b1", "#cad7e3", "M"],
-  women: ["#b9a08f", "#ece2d8", "W"],
-  kids: ["#8fae94", "#dbe8dc", "K"],
-  sneakers: ["#9a9a9a", "#e4e4e4", "S"],
-  "new-in": ["#7797b1", "#cad7e3", "N"],
-  sale: ["#27554d", "#a9c3b8", "%"],
-  story: ["#cad7e3", "#e8eeef", "M"],
-};
-for (const [name, [from, to, letter, w, h]] of Object.entries(HEROES)) {
-  writeFileSync(path.join(imgDir, `hero-${name}.svg`), heroSvg(from, to, letter, w, h));
-}
 
 const created = (daysAgo) => new Date(Date.UTC(2026, 9, 27) - daysAgo * 86400000).toISOString();
 
@@ -96,10 +74,10 @@ const cat = (id, name, slug, parentId, order, description, image = null) => ({
 });
 
 const categories = [
-  cat("c_men", "Men", "men", null, 1, "Polos, shirts and outerwear cut for everyday elegance.", "/placeholder/hero-men.svg"),
-  cat("c_women", "Women", "women", null, 2, "Dresses, polos and leather goods with a sporting spirit.", "/placeholder/hero-women.svg"),
-  cat("c_kids", "Kids", "kids", null, 3, "Comfortable essentials for the next generation.", "/placeholder/hero-kids.svg"),
-  cat("c_sneakers", "Sneakers", "sneakers", null, 4, "Court-inspired sneakers for every day.", "/placeholder/hero-sneakers.svg"),
+  cat("c_men", "Men", "men", null, 1, "Polos, shirts and outerwear cut for everyday elegance.", "/images/men.jpg"),
+  cat("c_women", "Women", "women", null, 2, "Dresses, polos and leather goods with a sporting spirit.", "/images/women.jpg"),
+  cat("c_kids", "Kids", "kids", null, 3, "Comfortable essentials for the next generation.", "/images/kids.jpg"),
+  cat("c_sneakers", "Sneakers", "sneakers", null, 4, "Court-inspired sneakers for every day.", "/images/sneakers.jpg"),
   cat("c_men_polo", "Polo", "men-polo", "c_men", 1, "The iconic piqué polo, in every colour."),
   cat("c_men_tshirts", "T-Shirts", "men-t-shirts", "c_men", 2, "Soft cotton tees for every day."),
   cat("c_men_jackets", "Jackets", "men-jackets", "c_men", 3, "Lightweight layers and outerwear."),
