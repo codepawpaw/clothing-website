@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800"><rect width="800" height="800" fill="#f6f6f6"/>
+    <path d="M300 170 L240 195 L170 250 L130 600 L200 610 L240 340 L245 640 L555 640 L560 340 L600 610 L670 600 L630 250 L560 195 L500 170 L400 230 Z" fill="#1c2541" stroke="rgba(0,0,0,.08)" stroke-width="3"/>
+    <path d="M300 170 L340 250 L400 230 L460 250 L500 170" fill="#1c2541" stroke="rgba(0,0,0,.18)" stroke-width="3"/>
+    <path d="M400 230 L400 640" stroke="rgba(0,0,0,.2)" stroke-width="4"/>
+    <rect x="455" y="300" width="30" height="12" rx="6" fill="rgba(0,0,0,.18)"/><ellipse cx="400" cy="700" rx="230" ry="18" fill="rgba(0,0,0,.05)"/></svg>

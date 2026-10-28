@@ -1,0 +1,132 @@
+[
+  {
+    "id": "c_men",
+    "name": "Men",
+    "slug": "men",
+    "parentId": null,
+    "description": "Polos, shirts and outerwear cut for everyday elegance.",
+    "image": "/placeholder/hero-men.svg",
+    "order": 1,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_women",
+    "name": "Women",
+    "slug": "women",
+    "parentId": null,
+    "description": "Dresses, polos and leather goods with a sporting spirit.",
+    "image": "/placeholder/hero-women.svg",
+    "order": 2,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_kids",
+    "name": "Kids",
+    "slug": "kids",
+    "parentId": null,
+    "description": "Comfortable essentials for the next generation.",
+    "image": "/placeholder/hero-kids.svg",
+    "order": 3,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_sneakers",
+    "name": "Sneakers",
+    "slug": "sneakers",
+    "parentId": null,
+    "description": "Court-inspired sneakers for every day.",
+    "image": "/placeholder/hero-sneakers.svg",
+    "order": 4,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_men_polo",
+    "name": "Polo",
+    "slug": "men-polo",
+    "parentId": "c_men",
+    "description": "The iconic piqué polo, in every colour.",
+    "image": null,
+    "order": 1,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_men_tshirts",
+    "name": "T-Shirts",
+    "slug": "men-t-shirts",
+    "parentId": "c_men",
+    "description": "Soft cotton tees for every day.",
+    "image": null,
+    "order": 2,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_men_jackets",
+    "name": "Jackets",
+    "slug": "men-jackets",
+    "parentId": "c_men",
+    "description": "Lightweight layers and outerwear.",
+    "image": null,
+    "order": 3,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_men_trousers",
+    "name": "Trousers",
+    "slug": "men-trousers",
+    "parentId": "c_men",
+    "description": "Chinos and tailored trousers.",
+    "image": null,
+    "order": 4,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_women_dresses",
+    "name": "Dresses",
+    "slug": "women-dresses",
+    "parentId": "c_women",
+    "description": "Polo dresses and tennis dresses.",
+    "image": null,
+    "order": 1,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_women_polo",
+    "name": "Polo",
+    "slug": "women-polo",
+    "parentId": "c_women",
+    "description": "Slim-fit polos for women.",
+    "image": null,
+    "order": 2,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_women_bags",
+    "name": "Bags",
+    "slug": "women-bags",
+    "parentId": "c_women",
+    "description": "Totes and shoulder bags.",
+    "image": null,
+    "order": 3,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_women_caps",
+    "name": "Caps",
+    "slug": "women-caps",
+    "parentId": "c_women",
+    "description": "Caps and accessories.",
+    "image": null,
+    "order": 4,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  },
+  {
+    "id": "c_kids_tshirts",
+    "name": "T-Shirts",
+    "slug": "kids-t-shirts",
+    "parentId": "c_kids",
+    "description": "Tees and polos for kids.",
+    "image": null,
+    "order": 1,
+    "createdAt": "2026-09-27T00:00:00.000Z"
+  }
+]

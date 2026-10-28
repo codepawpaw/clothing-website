@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Colours sampled from lacoste.com/id */
+@theme {
+  --color-ink: #292929;
+  --color-black: #000000;
+  --color-muted: #767676;
+  --color-subtle: #545454;
+  --color-line: #e5e5e5;
+  --color-tile: #f6f6f6;
+  --color-footer: #f4f4f4;
+  --color-badge: #7f7f7f;
+  --color-sale-badge: #27554d;
+  --color-sale: #1a4429;
+  --color-placeholder: #6e757c;
+  --color-icon: #666666;
+  --color-hero-from: #7797b1;
+  --color-hero-to: #cad7e3;
+}
+
+@theme inline {
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-placeholder);
+}

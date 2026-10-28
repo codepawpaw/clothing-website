@@ -1,0 +1,635 @@
+[
+  {
+    "id": "p_001",
+    "name": "Regular Fit Paris Stretch Piqué Polo Shirt",
+    "slug": "regular-fit-paris-stretch-pique-polo-shirt",
+    "categoryId": "c_men_polo",
+    "price": 1999000,
+    "salePrice": null,
+    "description": "A modern take on the classic polo. Stretch piqué cotton for comfort and freedom of movement, with a refined two-button placket and ribbed collar.",
+    "colors": [
+      {
+        "name": "Khaki",
+        "hex": "#7d7a5c"
+      },
+      {
+        "name": "Sky Blue",
+        "hex": "#7fa1c3"
+      },
+      {
+        "name": "Grey Chine",
+        "hex": "#a8a8a8"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "Green",
+        "hex": "#225431"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "/placeholder/polo-7d7a5c.svg",
+      "/placeholder/polo-7fa1c3.svg",
+      "/placeholder/polo-a8a8a8.svg"
+    ],
+    "badge": null,
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-26T00:00:00.000Z",
+    "updatedAt": "2026-10-26T00:00:00.000Z"
+  },
+  {
+    "id": "p_002",
+    "name": "Classic Fit Piqué Polo Shirt",
+    "slug": "classic-fit-pique-polo-shirt",
+    "categoryId": "c_men_polo",
+    "price": 1799000,
+    "salePrice": null,
+    "description": "The original polo in breathable cotton piqué. A timeless silhouette with ribbed cuffs and a split hem.",
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "Red",
+        "hex": "#b3262e"
+      },
+      {
+        "name": "Green",
+        "hex": "#225431"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "/placeholder/polo-ffffff.svg",
+      "/placeholder/polo-1c2541.svg",
+      "/placeholder/polo-b3262e.svg"
+    ],
+    "badge": "Any 2 extra 10% off",
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-25T00:00:00.000Z",
+    "updatedAt": "2026-10-25T00:00:00.000Z"
+  },
+  {
+    "id": "p_003",
+    "name": "Cotton Jersey Crew Neck T-Shirt",
+    "slug": "cotton-jersey-crew-neck-t-shirt",
+    "categoryId": "c_men_tshirts",
+    "price": 999000,
+    "salePrice": 699000,
+    "description": "Soft cotton jersey crew neck tee with an embroidered emblem on the chest.",
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Black",
+        "hex": "#1f1f1f"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "/placeholder/tee-ffffff.svg",
+      "/placeholder/tee-1f1f1f.svg",
+      "/placeholder/tee-1c2541.svg"
+    ],
+    "badge": null,
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-21T00:00:00.000Z",
+    "updatedAt": "2026-10-21T00:00:00.000Z"
+  },
+  {
+    "id": "p_004",
+    "name": "Water-Repellent Zip Jacket",
+    "slug": "water-repellent-zip-jacket",
+    "categoryId": "c_men_jackets",
+    "price": 3999000,
+    "salePrice": null,
+    "description": "A lightweight water-repellent jacket with a clean zip front and point collar. Easy to layer through the seasons.",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1f1f1f"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "Khaki",
+        "hex": "#7d7a5c"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "/placeholder/jacket-1f1f1f.svg",
+      "/placeholder/jacket-1c2541.svg",
+      "/placeholder/jacket-7d7a5c.svg"
+    ],
+    "badge": null,
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-24T00:00:00.000Z",
+    "updatedAt": "2026-10-24T00:00:00.000Z"
+  },
+  {
+    "id": "p_005",
+    "name": "Slim Fit Stretch Chino Trousers",
+    "slug": "slim-fit-stretch-chino-trousers",
+    "categoryId": "c_men_trousers",
+    "price": 2299000,
+    "salePrice": 1609300,
+    "description": "Slim chinos in stretch cotton twill. Tailored enough for the office, relaxed enough for the weekend.",
+    "colors": [
+      {
+        "name": "Beige",
+        "hex": "#d9c7ab"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "Black",
+        "hex": "#1f1f1f"
+      }
+    ],
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "images": [
+      "/placeholder/pants-d9c7ab.svg",
+      "/placeholder/pants-1c2541.svg",
+      "/placeholder/pants-1f1f1f.svg"
+    ],
+    "badge": null,
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-17T00:00:00.000Z",
+    "updatedAt": "2026-10-17T00:00:00.000Z"
+  },
+  {
+    "id": "p_006",
+    "name": "Ultra Dry Stretch Tennis Dress with Liner",
+    "slug": "ultra-dry-stretch-tennis-dress-with-liner",
+    "categoryId": "c_women_dresses",
+    "price": 3299000,
+    "salePrice": 1979400,
+    "description": "Engineered for the court: a breathable, quick-drying stretch dress with a pleated skirt and built-in liner shorts.",
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "/placeholder/dress-ffffff.svg"
+    ],
+    "badge": "Any 2 extra 10% off",
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "p_007",
+    "name": "Stretch Piqué Polo Dress",
+    "slug": "stretch-pique-polo-dress",
+    "categoryId": "c_women_dresses",
+    "price": 2799000,
+    "salePrice": null,
+    "description": "A polo dress in stretch piqué with a feminine, fitted silhouette.",
+    "colors": [
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Berry",
+        "hex": "#9c2a5a"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "/placeholder/dress-1c2541.svg",
+      "/placeholder/dress-ffffff.svg",
+      "/placeholder/dress-9c2a5a.svg"
+    ],
+    "badge": null,
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-25T00:00:00.000Z",
+    "updatedAt": "2026-10-25T00:00:00.000Z"
+  },
+  {
+    "id": "p_008",
+    "name": "Slim Fit Piqué Polo Shirt",
+    "slug": "women-slim-fit-pique-polo-shirt",
+    "categoryId": "c_women_polo",
+    "price": 1799000,
+    "salePrice": null,
+    "description": "A slim fit polo in soft cotton piqué with mother-of-pearl buttons.",
+    "colors": [
+      {
+        "name": "Pink",
+        "hex": "#f2cfd3"
+      },
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Ice Blue",
+        "hex": "#b8d4ea"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      }
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "images": [
+      "/placeholder/polo-f2cfd3.svg",
+      "/placeholder/polo-ffffff.svg",
+      "/placeholder/polo-b8d4ea.svg"
+    ],
+    "badge": null,
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-23T00:00:00.000Z",
+    "updatedAt": "2026-10-23T00:00:00.000Z"
+  },
+  {
+    "id": "p_009",
+    "name": "Anna Zipped Tote",
+    "slug": "anna-zipped-tote",
+    "categoryId": "c_women_bags",
+    "price": 2499000,
+    "salePrice": null,
+    "description": "A roomy coated canvas tote with a zip closure, leather-look handles and an interior pocket.",
+    "colors": [
+      {
+        "name": "Pink",
+        "hex": "#f2cfd3"
+      },
+      {
+        "name": "Berry",
+        "hex": "#9c2a5a"
+      },
+      {
+        "name": "Black",
+        "hex": "#1f1f1f"
+      },
+      {
+        "name": "Beige",
+        "hex": "#d9c7ab"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "images": [
+      "/placeholder/bag-f2cfd3.svg",
+      "/placeholder/bag-9c2a5a.svg",
+      "/placeholder/bag-1f1f1f.svg"
+    ],
+    "badge": "Any 2 extra 10% off",
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-26T00:00:00.000Z",
+    "updatedAt": "2026-10-26T00:00:00.000Z"
+  },
+  {
+    "id": "p_010",
+    "name": "Everyday Club Flap Close Shoulder Bag",
+    "slug": "everyday-club-flap-close-shoulder-bag",
+    "categoryId": "c_women_bags",
+    "price": 2799000,
+    "salePrice": null,
+    "description": "A structured shoulder bag with a flap closure and adjustable strap.",
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1f1f1f"
+      },
+      {
+        "name": "Brown",
+        "hex": "#5b4636"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "images": [
+      "/placeholder/bag-1f1f1f.svg",
+      "/placeholder/bag-5b4636.svg"
+    ],
+    "badge": "Any 2 extra 10% off",
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-22T00:00:00.000Z",
+    "updatedAt": "2026-10-22T00:00:00.000Z"
+  },
+  {
+    "id": "p_011",
+    "name": "Women's Anna Reversible Bicolour Tote Bag",
+    "slug": "womens-anna-reversible-bicolour-tote-bag",
+    "categoryId": "c_women_bags",
+    "price": 2499000,
+    "salePrice": 1749300,
+    "description": "Two looks in one: a reversible tote with a contrasting interior and a removable pouch.",
+    "colors": [
+      {
+        "name": "Ice Blue",
+        "hex": "#b8d4ea"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "Berry",
+        "hex": "#9c2a5a"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "images": [
+      "/placeholder/bag-b8d4ea.svg",
+      "/placeholder/bag-1c2541.svg",
+      "/placeholder/bag-9c2a5a.svg"
+    ],
+    "badge": null,
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-15T00:00:00.000Z",
+    "updatedAt": "2026-10-15T00:00:00.000Z"
+  },
+  {
+    "id": "p_012",
+    "name": "Embroidered Cotton Twill Cap",
+    "slug": "embroidered-cotton-twill-cap",
+    "categoryId": "c_women_caps",
+    "price": 799000,
+    "salePrice": null,
+    "description": "A six-panel cotton twill cap with an adjustable strap and embroidered emblem.",
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "Green",
+        "hex": "#225431"
+      }
+    ],
+    "sizes": [
+      "One Size"
+    ],
+    "images": [
+      "/placeholder/cap-ffffff.svg",
+      "/placeholder/cap-1c2541.svg",
+      "/placeholder/cap-225431.svg"
+    ],
+    "badge": null,
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-18T00:00:00.000Z",
+    "updatedAt": "2026-10-18T00:00:00.000Z"
+  },
+  {
+    "id": "p_013",
+    "name": "Kids' Cotton Jersey T-Shirt",
+    "slug": "kids-cotton-jersey-t-shirt",
+    "categoryId": "c_kids_tshirts",
+    "price": 599000,
+    "salePrice": null,
+    "description": "Everyday cotton jersey tee for kids, soft and easy to wash.",
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "hex": "#7fa1c3"
+      },
+      {
+        "name": "Red",
+        "hex": "#b3262e"
+      },
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "4Y",
+      "6Y",
+      "8Y",
+      "10Y",
+      "12Y"
+    ],
+    "images": [
+      "/placeholder/tee-7fa1c3.svg",
+      "/placeholder/tee-b3262e.svg",
+      "/placeholder/tee-ffffff.svg"
+    ],
+    "badge": null,
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-24T00:00:00.000Z",
+    "updatedAt": "2026-10-24T00:00:00.000Z"
+  },
+  {
+    "id": "p_014",
+    "name": "Kids' Piqué Polo Shirt",
+    "slug": "kids-pique-polo-shirt",
+    "categoryId": "c_kids_tshirts",
+    "price": 799000,
+    "salePrice": 559300,
+    "description": "The classic polo, sized for kids.",
+    "colors": [
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      },
+      {
+        "name": "Green",
+        "hex": "#225431"
+      },
+      {
+        "name": "Pink",
+        "hex": "#f2cfd3"
+      }
+    ],
+    "sizes": [
+      "4Y",
+      "6Y",
+      "8Y",
+      "10Y",
+      "12Y"
+    ],
+    "images": [
+      "/placeholder/polo-1c2541.svg",
+      "/placeholder/polo-225431.svg",
+      "/placeholder/polo-f2cfd3.svg"
+    ],
+    "badge": null,
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-13T00:00:00.000Z",
+    "updatedAt": "2026-10-13T00:00:00.000Z"
+  },
+  {
+    "id": "p_015",
+    "name": "Carnaby Leather Sneakers",
+    "slug": "carnaby-leather-sneakers",
+    "categoryId": "c_sneakers",
+    "price": 2599000,
+    "salePrice": null,
+    "description": "Clean leather court sneakers with a cushioned insole and rubber cupsole.",
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Black",
+        "hex": "#1f1f1f"
+      },
+      {
+        "name": "Green",
+        "hex": "#225431"
+      }
+    ],
+    "sizes": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "images": [
+      "/placeholder/sneaker-ffffff.svg",
+      "/placeholder/sneaker-1f1f1f.svg",
+      "/placeholder/sneaker-225431.svg"
+    ],
+    "badge": null,
+    "isNew": true,
+    "isActive": true,
+    "createdAt": "2026-10-25T00:00:00.000Z",
+    "updatedAt": "2026-10-25T00:00:00.000Z"
+  },
+  {
+    "id": "p_016",
+    "name": "Lineshot Suede Sneakers",
+    "slug": "lineshot-suede-sneakers",
+    "categoryId": "c_sneakers",
+    "price": 2899000,
+    "salePrice": 2029300,
+    "description": "Retro-inspired suede sneakers with tonal laces and a gum sole.",
+    "colors": [
+      {
+        "name": "Beige",
+        "hex": "#d9c7ab"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1c2541"
+      }
+    ],
+    "sizes": [
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "images": [
+      "/placeholder/sneaker-d9c7ab.svg",
+      "/placeholder/sneaker-1c2541.svg"
+    ],
+    "badge": null,
+    "isNew": false,
+    "isActive": true,
+    "createdAt": "2026-10-16T00:00:00.000Z",
+    "updatedAt": "2026-10-16T00:00:00.000Z"
+  }
+]
